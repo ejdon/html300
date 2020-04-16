@@ -99,5 +99,4 @@ $(function() {
       input.val('');
     }
   });
-  
 });
