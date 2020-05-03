@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    background-color: $gray;
 }
 
 *,
@@ -8,10 +9,103 @@ html {
     box-sizing: inherit;
 }
 
+//styling for main container
 .main {
-    padding: 2rem;
+  margin: 5% 20%;
+
+  @include small-screen {
+    margin: 0%;
+  }
 }
 
-h1 {
-    color: $red;  
+//styling for white container
+.container {
+  display: flex;
+  margin: 5% 0%;
+  padding: 2% 1%;
+  background-color: $white;
+
+    @include small-screen {
+      width: 95%;
+      margin: 5% 3% 5% 3%;
+    }
+
+    @include medium-screen {
+      width: 120%;
+      margin: 0%;
+
+    }
+
+  //styling for nested content - name, job title, image
+  .image {
+    margin-left: 15%;
+    border-radius: 50%;
+    width: 70%;
+
+    @include small-screen {
+      width: 50%;
+      margin-left: 25%;
+    }
+  }
+
+  .name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $font-gray;
+    text-align: center;
+    font-family: $font;
+
+    @include small-screen {
+      font-size: 1rem;
+    }
+  }
+
+  .title {
+    font-size: 1.5rem;
+    color: $font-gray;
+    text-align: center;
+
+    @include small-screen {
+      font-size: 1rem;
+    }
+  }
+}
+
+//styling for gray container - paragraph elements, LinkedIn info
+.info {
+  background-color: $gray;
+  margin: 1% 8% 1% 0%;
+  width: 80%;
+  font-size: 1.25rem;
+  font-family: $font;
+  color: $font-gray;
+
+  @include small-screen {
+    font-size: .9rem;
+    width: 50rem;
+    margin: 1% 1%;
+  }
+
+  @include medium-screen {
+    width: 90%;
+    margin: 0%;
+  }
+
+  p {
+  margin-left: 5%;
+
+    @include small-screen {
+      width: 80%;
+    }
+  }
+
+  .linkedin {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    }
+
+  .linkedin-image {
+    margin-left: 5%;
+  }
 }
