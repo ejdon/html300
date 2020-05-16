@@ -1,0 +1,128 @@
+* {
+    font-family: $font;
+}
+
+//car icon
+i[class^="fas"] {
+  color: $brand-red;
+  transition: transform 3s ease-in-out;
+  margin-left: 5%;
+}
+
+#car-container:hover .move-right {
+  @include large-screen {
+    transform: translate(150vh,0) rotate(-20deg);
+    -webkit-transform: translate(150vh,0) rotate(-20deg); /** Chrome & Safari **/
+    -o-transform: translate(150vh,0) rotate(-20deg); /** Opera **/
+    -moz-transform: translate(150vh,0) rotate(-20deg); /** Firefox **/
+  }
+  @include small-screen {
+    transform: translate(40vh,0) rotate(-20deg);
+    -webkit-transform: translate(40vh,0) rotate(-20deg); /** Chrome & Safari **/
+    -o-transform: translate(40vh,0) rotate(-20deg); /** Opera **/
+    -moz-transform: translate(40vh,0) rotate(-20deg); /** Firefox **/
+  }
+}
+
+
+//navigation
+.global-navigation {
+  display: flex;
+  font-size: 1.5em;
+  font-weight: bold;
+  background: $brand-red;
+  padding: 2% 0% 2% 0%;
+  border-radius: 25px;
+  margin: 2% 5%;
+
+  .nav-link {
+    color: $white;
+    text-decoration: none;
+    margin: 0% 1% 0 10%;
+  }
+  .nav-link-2 {
+    color: $white;
+    text-decoration: none;
+    margin: 0% 1% 0 0%;
+  }
+}
+
+//main
+.main {
+  @include large-screen {
+    display: flex;
+    padding: 3% 5%;
+  }
+  @include small-screen {
+    display: flex;
+    flex-flow: column;
+  }
+  .text-container {
+    @include large-screen {
+      flex-flow: column;
+    }
+  }
+}
+
+
+//index page
+.index-image {
+  @include large-screen {
+    margin-right: 5%;
+    width: 40%;
+  }
+  @include small-screen {
+    width: 100%;
+  }
+}
+.index-header {
+  margin: 1% 5%;
+
+  @include small-screen {
+    text-align: center;
+  }
+}
+
+.index-question {
+  margin: 1% 5%;
+}
+.index-body {
+  margin: 2% 5%;
+}
+
+//tips page
+.tips {
+  line-height: 2rem;
+}
+  .tips-header{
+    @include small-screen {
+      text-align: center;
+    }
+  }
+.tips-image {
+    @include large-screen {
+        width: 40%;
+        margin-left: 7%;
+        margin-right: 5%;
+      }
+    @include small-screen {
+        width: 100%;
+      }
+    }
+
+//footer
+.universal-footer {
+    text-align: center;
+    margin: 0% 5%;
+    .footer-link {
+      text-decoration: none;
+    }
+    .footer-image {
+      @include large-screen {
+        width: 10%;
+      }
+      @include small-screen {
+        width: 30%;
+      }
+    }
+  }

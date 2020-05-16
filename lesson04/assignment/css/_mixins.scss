@@ -1,0 +1,8 @@
+//Media Query Mixins
+@mixin large-screen {
+  @media (min-width: 526px) { @content; }
+}
+
+@mixin small-screen {
+  @media (max-width: 525px) { @content; }
+}
