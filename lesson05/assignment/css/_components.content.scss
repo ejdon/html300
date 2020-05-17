@@ -2,6 +2,11 @@
     font-family: $font;
 }
 
+//header
+.header-image {
+  width: 100%;
+}
+
 //grid
 .grid-container {
   @include large-screen {
@@ -14,11 +19,11 @@
       'nav nav'
       'sidebar main'
       'footer footer';
-    }
+  }
 }
 .grid-1 {
     grid-area: header;
-    }
+  }
 .grid-2 {
     grid-area: icon;
   }
@@ -32,13 +37,13 @@
     border: 2px solid $brand-red;
     border-radius: 5px;
     margin-top: 5%;
-    @include large-screen {
-        margin-right: 15%;
-      }
-    @include small-screen {
-      margin-right: 0%;
-      }
-    }
+  @include large-screen {
+    margin-right: 15%;
+  }
+  @include small-screen {
+    margin-right: 0%;
+  }
+}
 .grid-5 {
   grid-area: sidebar;
   display: flex;
@@ -47,7 +52,7 @@
  }
 .grid-6 {
     grid-area: footer;
-  }
+}
 
 //car icon
 i[class^="fas"] {
@@ -98,7 +103,6 @@ i[class^="fas"] {
     margin-right: 5%;
 }
 
-
 //main
 .main {
   @include large-screen {
@@ -132,19 +136,18 @@ i[class^="fas"] {
   line-height: 2rem;
   padding: 4% 0%;
   font-size: 1.5rem;
-  }
+}
 
 .tips-header {
   margin-left: 5%;
 }
-
 
 //index page
 .index-image {
   @include large-screen {
     margin-right: 5%;
     width: 40%;
-  }
+}
   @include small-screen {
     width: 100%;
   }
@@ -168,15 +171,15 @@ i[class^="fas"] {
 .universal-footer {
     text-align: center;
     margin: 0% 5%;
-    .footer-link {
-      text-decoration: none;
+  .footer-link {
+    text-decoration: none;
+  }
+  .footer-image {
+    @include large-screen {
+      width: 10%;
     }
-    .footer-image {
-      @include large-screen {
-        width: 10%;
-      }
-      @include small-screen {
-        width: 30%;
-      }
+    @include small-screen {
+      width: 30%;
     }
   }
+}

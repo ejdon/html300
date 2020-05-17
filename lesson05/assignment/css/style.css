@@ -356,6 +356,9 @@ th {
 * {
   font-family: "Georgia", serif; }
 
+.header-image {
+  width: 100%; }
+
 @media (min-width: 526px) {
   .grid-container {
     display: grid;
