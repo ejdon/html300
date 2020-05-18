@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <title>Schedule for Car Safe Kids!</title>
+  <script src="https://kit.fontawesome.com/cf664912a7.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <img src="images/header.jpg" alt="The Car Safe Kids logo next to an image of a technician working outside of a car with a family" class="img-fluid w-100">
+  </header>
+
+  <!--car icon-->
+  <div id="car-container">
+    <i class="fas fa-car-side fa-3x move-right" id="car-icon"></i>
+  </div>
+
+<!-- navigation -->
+<nav class="navbar navbar-expand-lg navbar-light m-3">
+     <a class="navbar-brand text-danger" href="#"><strong>Car Safe Kids</strong></a>
+     <div class="navbar-nav">
+       <a class="nav-item nav-link text-danger active" href="index.html">Home</a>
+       <a class="nav-item nav-link text-danger" href="schedule.html">Schedule <span class="sr-only">(current)</span></a>
+       <a class="nav-item nav-link text-danger" href=faqs.html>FAQs</a>
+       <a class="nav-item nav-link text-danger" href="images.html">Images</a>
+     </div>
+ </nav>
+
+ <!-- alert -->
+ <div class="alert alert-warning">To continue to serve child caregivers during social distancing, CSK has formed a virtual checkup sub-team. If you are a currently certified child passenger safety technician who would like to be added to our team, please contact Jane at jane.doe@mail.com.</div>
+
+ <!-- schedule grid -->
+ <main>
+  <div class="container">
+    <h1>Car Safe Kids Schedule</h1>
+  </div>
+  <div class="container">
+  <div class="row">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="flex-fill m-5" style="background-color: #f2e6df;"><strong>Date</strong></div>
+      <div class="flex-fill m-5">July 18th</div>
+      <div class="flex-fill m-5">August 22nd</div>
+      <div class="flex-fill m-5">September 5th</div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="flex-fill m-5" style="background-color: #f2e6df;"><strong>Time</strong></div>
+      <div class="flex-fill m-5">10am - 2pm</div>
+      <div class="flex-fill m-5">10am - 12:30pm</div>
+      <div class="flex-fill m-5">10am - 2pm</div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="flex-fill m-5" style="background-color: #f2e6df;"><strong>Location</strong></div>
+      <div class="flex-fill m-5" data-toggle="popover" title="12040 N.E. 128th St, Kirkland, WA " data-content="Main (Blue) Garage, 1st Floor">Evergreen Hospital</div>
+      <div class="flex-fill m-5" data-toggle="popover" title="4800 Sand Point Way N.E., Seattle, WA" data-content="Ocean Garage">Seattle Children's Hospital</div>
+      <div class="flex-fill m-5" data-toggle="popover" title="12040 N.E. 128th St, Kirkland, WA " data-content="Main (Blue) Garage, 1st Floor">Evergreen Hospital</div>
+    </div>
+  </div>
+</div>
+</main>
+
+<!-- footer -->
+<footer class="universal-footer">
+  <img class="footer-image" src="images/csk-small-logo.jpg" alt="The Car Safe Kids logo">
+  <p class="footer-body">Aborpos nisto inci tet aut que volupti beruptiberro to ex  esseque invenienihil imaximu scideru ptistiusam consequun</p>
+  <a class="footer-link" href="index.html">Home / </a>
+  <a class="footer-link" href="schedule.html">Schedule /</a>
+  <a class="footer-link" href="faqs.html">FAQs / </a>
+  <a class="footer-link" href="images.html">Images </a>
+  <p class="footer-body">Car Safe Kids   |   Seattle, WA</p>
+</footer>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+});
+</script>
+</body>
+</html>

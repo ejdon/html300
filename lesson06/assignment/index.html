@@ -1,15 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Assignment 06 - Bootstrap 4</title>
-    </head>
-    <body>
-        <main class="main">
-          
-        </main>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <title>Car Safe Kids Homepage</title>
+  <script src="https://kit.fontawesome.com/cf664912a7.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <img src="images/header.jpg" alt="The Car Safe Kids logo next to an image of a technician working outside of a car with a family" class="img-fluid w-100">
+  </header>
+
+  <!--car icon-->
+  <div id="car-container" class="one">
+    <i class="fas fa-car-side fa-3x move-right" id="car-icon"></i>
+  </div>
+
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light m-3">
+       <a class="navbar-brand text-danger" href="#"><strong>Car Safe Kids</strong></a>
+       <div class="navbar-nav">
+         <a class="nav-item nav-link text-danger active" href="index.html">Home <span class="sr-only">(current)</span></a>
+         <a class="nav-item nav-link text-danger" href="schedule.html">Schedule</a>
+         <a class="nav-item nav-link text-danger" href=faqs.html>FAQs</a>
+         <a class="nav-item nav-link text-danger" href="images.html">Images</a>
+       </div>
+   </nav>
+
+<!-- alert -->
+<div class="alert alert-warning">To continue to serve child caregivers during social distancing, CSK has formed a virtual checkup sub-team. If you are a currently certified child passenger safety technician who would like to be added to our team, please contact Jane at jane.doe@mail.com.</div>
+
+<!-- index text section -->
+<main>
+  <div class="row">
+  <div class="container col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" style="margin-left: 2%; margin-top: 3%;">
+    <h1>Car Safe Kids</h1>
+    <h2>Did you know 9 out of 10 car seats are misused!</h2>
+    <p>If you want to beat these odds and maximize vehicle safety for your child, then this is for you! Come get one-on-one guidance on using your child car seat.</p>
+    <p>Bring your car seat, your car, and your child and be prepared to have hands-on training. Expectant parents and other caregivers also welcome.</p>
+  </div>
+
+<!-- index image section -->
+  <img class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5" src="images/index-image.jpg" alt="A woman buckling a child into a car seat" style="margin-right: 2%;">
+</div>
+
+<!-- quote -->
+  <div class="container">
+    <div class="card m-3">
+        <div class="card-header">Hear from other visitors
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <footer class="blockquote-footer">Jane Doe <cite title="Source Title">Seattle, WA</cite></footer>
+          </blockquote>
+        </div>
+    </div>
+  </div>
+</main>
+
+<!-- footer -->
+<footer class="universal-footer">
+  <img class="footer-image" src="images/csk-small-logo.jpg" alt="The Car Safe Kids logo">
+  <p class="footer-body">Aborpos nisto inci tet aut que volupti beruptiberro to ex  esseque invenienihil imaximu scideru ptistiusam consequun</p>
+  <a class="footer-link" href="index.html">Home / </a>
+  <a class="footer-link" href="schedule.html">Schedule /</a>
+  <a class="footer-link" href="faqs.html">FAQs / </a>
+  <a class="footer-link" href="images.html">Images </a>
+  <p class="footer-body">Car Safe Kids   |   Seattle, WA</p>
+</footer>
+</body>
 </html>
