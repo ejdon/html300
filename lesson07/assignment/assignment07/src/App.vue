@@ -27,10 +27,10 @@
    <footer class="universal-footer">
      <img class="footer-image" src="./assets/csk-small-logo.jpg" alt="The Car Safe Kids logo">
      <p class="footer-body">Aborpos nisto inci tet aut que volupti beruptiberro to ex  esseque invenienihil imaximu scideru ptistiusam consequun</p>
-     <a class="footer-link" href="index.html">Home / </a>
-     <a class="footer-link" href="schedule.html">Schedule /</a>
-     <a class="footer-link" href="faqs.html">FAQs / </a>
-     <a class="footer-link" href="images.html">Images </a>
+     <router-link to="/" class="footer-link">Home / </router-link>
+     <router-link to="/schedule" class="footer-link">Schedule / </router-link>
+     <router-link to="/FAQs" class="footer-link">FAQs / </router-link>
+     <router-link to="/images" class="footer-link">Images / </router-link>
      <p class="footer-body">Car Safe Kids   |   Seattle, WA</p>
    </footer>
 

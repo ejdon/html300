@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+
   <!-- alert -->
   <div class="alert alert-warning">To continue to serve child caregivers during social distancing, CSK has formed a virtual checkup sub-team. If you are a currently certified child passenger safety technician who would like to be added to our team, please contact Jane at jane.doe@mail.com.</div>
 
@@ -11,7 +12,15 @@
       <h2>Did you know 9 out of 10 car seats are misused!</h2>
       <p>If you want to beat these odds and maximize vehicle safety for your child, then this is for you! Come get one-on-one guidance on using your child car seat.</p>
       <p>Bring your car seat, your car, and your child and be prepared to have hands-on training. Expectant parents and other caregivers also welcome.</p>
-    </div>
+
+      <!-- v-if and v-else -->
+      <btn v-if="show" v-on:click="show = !show" class="btn btn-info">Check out our schedule to attend an event</btn>
+      <ul v-else>
+        <li><a href="/schedule">July 18th - Evergreen Hospital</a></li>
+        <li><a href="/schedule">August 22nd - Children's Hospital</a></li>
+        <li><a href="/schedule">September 5th - Evergreen Hospital</a></li>
+      </ul>
+      </div>
 
   <!-- index image section -->
     <img class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5" src="../assets/index-image.jpg" alt="A woman buckling a child into a car seat" style="margin-right: 2%;">
@@ -29,6 +38,7 @@
             </blockquote>
           </div>
       </div>
+
     </div>
   </main>
 
@@ -38,8 +48,10 @@
 <script>
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
+  data () {
+  return {
+    show: true,
+    }
   }
 }
 </script>
