@@ -15,10 +15,10 @@
 
       <!-- v-if and v-else -->
       <btn v-if="show" v-on:click="show = !show" class="btn btn-info">Check out our schedule to attend an event</btn>
-      <ul v-else>
-        <li><a href="/schedule">July 18th - Evergreen Hospital</a></li>
-        <li><a href="/schedule">August 22nd - Children's Hospital</a></li>
-        <li><a href="/schedule">September 5th - Evergreen Hospital</a></li>
+      <ul v-else class="list-group list-group-flush">
+        <li class="list-group-item"><a href="/schedule">July 18th - Evergreen Hospital</a></li>
+        <li class="list-group-item"><a href="/schedule">August 22nd - Children's Hospital</a></li>
+        <li class="list-group-item"><a href="/schedule">September 5th - Evergreen Hospital</a></li>
       </ul>
       </div>
 
