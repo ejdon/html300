@@ -5,28 +5,14 @@
  <main>
  <!-- image gallery -->
  <div class="row">
-  <div class="col-md-4">
+  <div v-for="images in images" v-bind:key="images" class="col-md-4">
     <div class="thumbnail">
-        <img src="../assets/sidebar-1.jpg" alt="Lights" style="width:100%">
+    <a v-bind:href="link">
+        <img :src="images.src" :alt="images.alt" style="width:100%">
         <div class="caption">
-          <p>CSK will teach you how to install your child's car seat.</p>
+          <p>{{images.caption}}</p>
         </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-        <img src="../assets/sidebar-2.jpg" alt="Nature" style="width:100%">
-        <div class="caption">
-          <p>CSK can assist families with babies, expectant parents, and others, including grandparents and nannies.</p>
-        </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-        <img src="../assets/sidebar-3.jpg" alt="Fjords" style="width:100%">
-        <div class="caption">
-          <p>CSK technicians will ensure your baby's care seat harness is used properly.</p>
-        </div>
+        </a>
     </div>
   </div>
 </div>
@@ -35,11 +21,23 @@
 </template>
 
 <script>
+var image1 = require('../assets/sidebar-1.jpg');
+var image2 = require('../assets/sidebar-2.jpg');
+var image3 = require('../assets/sidebar-3.jpg');
+
 
 export default {
   name: 'images',
-  props: {
-    msg: String
-  }
-}
-</script>
+  data () {
+    return {
+    link: "/schedule",
+    images: [
+      { src: image1, alt: 'a woman installing a car seat into a car', caption: 'CSK will teach you how to install your car seat' },
+      { src: image2, alt: 'a baby smiling at the camera while in a car seat', caption: 'CSK can assist families with babies, expectant parents, and others, including grandparents and nannies' },
+      { src: image3, alt: 'a man installing a baby into a car seat', caption: 'CSK technicians will ensure your car seat harness is used properly' },
+
+      ]
+        }
+       }
+      }
+      </script>
