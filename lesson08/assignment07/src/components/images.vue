@@ -2,11 +2,13 @@
 import mixins from './mixins';
 import photos from './images-content.vue';
 
-//Create variable paths for images
+//Creating image variables
 var image1 = require('../assets/sidebar-1.jpg');
 var image2 = require('../assets/sidebar-2.jpg');
 var image3 = require('../assets/sidebar-3.jpg');
 
+
+//image data
 export default {
 name: 'Images',
 mixins: [mixins],

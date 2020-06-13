@@ -26,7 +26,7 @@
            </div>
            <div class="card">
 
-           <!--Question-->
+           <!--Question 2-->
              <div class="card-header">
                <h2>
                  <button class="btn btn-link" data-toggle="collapse" type="button" v-on:click="show2 = !show2" data-target="#collapseTwo">
@@ -35,7 +35,7 @@
                </h2>
              </div>
 
-             <!--Answer-->
+             <!--Answer 2-->
              <div id="collapseTwo" v-if="show2" class="collapse show2" data-parent="#accordion">
                <div class="card-body">
                    {{ item.answer2 }}
@@ -44,7 +44,7 @@
            </div>
            <div class="card">
 
-           <!--Question-->
+           <!--Question 3-->
              <div class="card-header">
                <h2>
                  <button class="btn btn-link" data-toggle="collapse" type="button" v-on:click="show3 = !show3" data-target="#collapseThree">
@@ -53,7 +53,7 @@
                </h2>
              </div>
 
-             <!--Answer-->
+             <!--Answer 3 -->
              <div id="collapseThree" v-if="show3" class="collapse show3" data-parent="#accordion">
                <div class="card-body">
                    {{ item.answer3 }}

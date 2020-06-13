@@ -26,7 +26,7 @@
     <img class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5" src="../assets/index-image.jpg" alt="A woman buckling a child into a car seat" style="margin-right: 2%;">
   </div>
 
-  <!-- quote and filter to upper case -->
+  <!-- quote and filter -->
     <div class="container">
       <div class="card m-3">
           <div class="card-header">{{ quote | upperCase }}

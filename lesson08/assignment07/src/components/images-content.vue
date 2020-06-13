@@ -1,11 +1,13 @@
 <template>
-<!--photo code -->
+
+<!--image code -->
   <div>
     <img :src="image.src" :alt="image.alt" style="width:100%" id="noBorder" class="addBorder frame card-img-top img-fluid rounded">
     <div class="caption">
     <p>{{image.caption}}</p>
     </div>
   </div>
+  
 </template>
 
 <script>

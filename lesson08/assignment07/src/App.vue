@@ -1,9 +1,10 @@
 <template>
   <div id="app">
+  
   <!-- header and slot-->
   <header>
     <hero>
-      <slot name="heading"></slot>  
+      <slot name="heading"></slot>
     </hero>
   </header>
 
