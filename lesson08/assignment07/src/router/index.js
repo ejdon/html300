@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import home from '@/components/home'
 import images from '@/components/images'
 import schedule from '@/components/schedule'
 import faqs from '@/components/FAQs'
-import header from '@/components/header'
+import hero from '@/components/hero'
 
 
 Vue.use(VueRouter)
@@ -12,8 +12,8 @@ Vue.use(VueRouter)
 const routes = [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'home',
+      component: home
     },
     {
       path: '/images',
@@ -31,9 +31,9 @@ const routes = [
       component: faqs
     },
     {
-      path: '/header',
-      name: 'header',
-      component: header
+      path: '/hero',
+      name: 'hero',
+      component: hero
     }
   ]
 

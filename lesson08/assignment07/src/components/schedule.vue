@@ -12,7 +12,7 @@
              <div class="row">
 
              <!-- starting for loop -->
-               <div v-for="item in items" v-bind:key="item" class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+               <div v-for="(item, index) in items" v-bind:key="index" class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                  <div class="flex-fill m-5" style="background-color: #f2e6df;">{{ item.date }}</div>
                  <div class="flex-fill m-5">{{ item.time }}</div>
                  <div class="flex-fill m-5">{{ item.location }}</div>

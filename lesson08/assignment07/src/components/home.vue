@@ -26,10 +26,10 @@
     <img class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5" src="../assets/index-image.jpg" alt="A woman buckling a child into a car seat" style="margin-right: 2%;">
   </div>
 
-  <!-- quote -->
+  <!-- quote and filter to upper case -->
     <div class="container">
       <div class="card m-3">
-          <div class="card-header">Hear from other visitors
+          <div class="card-header">{{ quote | upperCase }}
           </div>
           <div class="card-body">
             <blockquote class="blockquote">
@@ -46,13 +46,20 @@
 </template>
 
 <script>
+
+//filter
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   data () {
   return {
-    show: true,
-    }
+  quote: 'Hear from other visitors',
   }
+},
+filters: {
+  upperCase: function(value) {
+    return value.toUpperCase();
+  }
+}
 }
 </script>
 

@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-  <!-- header -->
+  <!-- header and slot-->
   <header>
-    <img src="./assets/header.jpg" alt="The Car Safe Kids logo next to an image of a technician working outside of a car with a family" class="img-fluid w-100">
+    <hero>
+      <slot name="heading"></slot>  
+    </hero>
   </header>
 
   <!--car icon-->
@@ -12,7 +14,7 @@
 
   <!-- navigation -->
   <nav class="navbar navbar-expand-lg navbar-light m-3">
-      <router-link to="/header" class="navbar-brand text-danger"><strong>Car Safe Kids</strong></router-link>
+      <router-link to="/" class="navbar-brand text-danger"><strong>Car Safe Kids</strong></router-link>
        <div class="navbar-nav">
          <router-link to="/" class="nav-item nav-link text-danger active">Home <span class="sr-only">(current)</span></router-link>
          <router-link to="/schedule" class="nav-item nav-link text-danger">Schedule</router-link>
@@ -36,3 +38,15 @@
 
   </div>
 </template>
+
+<script>
+import hero from './components/hero.vue';
+
+export default {
+  name: 'app',
+  components: {
+    hero
+  }
+
+}
+</script>

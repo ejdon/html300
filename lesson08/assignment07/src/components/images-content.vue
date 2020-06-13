@@ -10,7 +10,7 @@
 
 <script>
 
-//prop validation
+//props
 export default {
     name: 'photos',
     props: {
