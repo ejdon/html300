@@ -1,41 +1,40 @@
-<template>
-
-    <div class="flex-item">
-        <h6> {{ item.source.name }} </h6>
-        <a :href="item.url"> {{ item.title }} </a>
-        <p><img :src="item.urlToImage"></p>
-        <p> {{ item.author }} </p>
-    </div>
-
-</template>
-
 <script>
 export default {
 	props: {
-		item: Object
+		country: Object
 	}
 }
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-.flex-item {
-    width: 11rem;
-    margin: 1rem;
-}
-@media screen and (max-width: 680px) {
-  .flex-item {
-    width: 35%;
+<template>
+
+    <article class="card">
+        <img :src="country.flag" :alt="country.name" class="card_img">
+        <h2 class="card_title">{{ country.name }}</h2>
+        <p class="card_copy"> {{ country.subregion }} </p>
+    </article>
+
+</template>
+
+
+
+<style lang="scss">
+.card {
+  margin: 1rem;
+  border: 1px solid red;
+  padding: 1.5rem;
+  max-width: 200px;
+  min-height: 200px;
+  &_img {
+    display: block;
+    margin-bottom: 1rem;
   }
-}
-h6 {
-    font-family: 'Roboto', sans-serif;
-    color: #DFBBB6;
-}
-a {
-    font-family: 'Roboto', sans-serif;
-}
-img {
-    width: 100%;
+  &_title {
+    font-size: 1rem;
+    margin-bottom: .25rem;
+    }
+  &_copy {
+    font-size: .875rem;
+  }
 }
 </style>

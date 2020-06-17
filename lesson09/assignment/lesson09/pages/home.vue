@@ -38,25 +38,7 @@
             </blockquote>
           </div>
       </div>
-      <div class="card float-right" id="homeFeature">
-              <div class="card-body">
-                <h5 class="card-title">Tulips in the news</h5>
-                <div v-if="show">
-                  <div class="api-container" v-if="items">
-                    <api
-                      v-for="item of items"
-                      :key="item.author"
-                      :item="item"
-                    />
-                    <a href="NewsAPI.org">Powered by News API</a>
-                  </div>
-                </div>
-                <button v-else v-on:click="show = !show" class="btn btn-danger" data-toggle="tooltip" data-placement="right">What's new today?</button>
-                <p>Get the latest news and trends on tulips around the world.</p>
-              </div>
-            </div>
-
-
+      
     </div>
   </main>
 
@@ -64,9 +46,6 @@
 </template>
 
 <script>
-import api from '../pages/api.vue'
-import axios from 'axios'
-
 //filter
 export default {
   name: 'Home',
