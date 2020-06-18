@@ -19,22 +19,5 @@ export default {
 
 
 <style lang="scss">
-.card {
-  margin: 1rem;
-  border: 1px solid red;
-  padding: 1.5rem;
-  max-width: 200px;
-  min-height: 200px;
-  &_img {
-    display: block;
-    margin-bottom: 1rem;
-  }
-  &_title {
-    font-size: 1rem;
-    margin-bottom: .25rem;
-    }
-  &_copy {
-    font-size: .875rem;
-  }
-}
+
 </style>
