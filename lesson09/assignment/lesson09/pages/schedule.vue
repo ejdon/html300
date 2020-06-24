@@ -17,6 +17,7 @@
                  <div class="flex-fill m-5" style="background-color: #f2e6df;">{{ item.date }}</div>
                  <div class="flex-fill m-5">{{ item.time }}</div>
                  <div class="flex-fill m-5">{{ item.location }}</div>
+                 <div class="flex-fill m-5">{{ item.note }}</div>
                </div>
              </div>
          </div>
@@ -51,9 +52,9 @@ export default {
        errored: false,
        title: 'Car Safe Kids Schedule!',
        items: [
-       { date: 'July 18th', time: '10am - 2pm', location: '12040 N.E. 128th St, Kirkland, WA ' },
-       { date: 'August 22nd', time: '10am - 12:30pm', location: '4800 Sand Point Way N.E., Seattle, WA' },
-       { date: 'September 5th', time: '10am - 5pm', location: '12040 N.E. 128th St, Kirkland, WA' },
+       { date: 'July 18th', time: '10am - 2pm', location: '12040 N.E. 128th St, Kirkland, WA ', note: 'Please note: there may be a wait before being helped' },
+       { date: 'August 22nd', time: '10am - 12:30pm', location: '4800 Sand Point Way N.E., Seattle, WA', note: 'Please note: there may be a wait before being helped' },
+       { date: 'September 5th', time: '10am - 5pm', location: '12040 N.E. 128th St, Kirkland, WA', note: 'Please note: there may be a wait before being helped' },
        ],
      }
    },
