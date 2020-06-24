@@ -23,12 +23,12 @@
 
 <!--api -->
         <div class="wrapper">
-          <h1 class="heading">Countries of Europe</h1>
-          <section class="container" v-if="countries">
+          <h1 class="heading">Stuck waiting? Here's some news to pass the time:</h1>
+          <section class="container" v-if="articles">
           <api
-            v-for="country of countries"
-            :key="country.id"
-            :country="country"
+            v-for="article of articles"
+            :key="article.id"
+            :article="article"
             />
           </section>
           </div>
@@ -47,7 +47,7 @@ export default {
   data (){
      return {
        loading: true,
-       countries: null,
+       articles: null,
        errored: false,
        title: 'Car Safe Kids Schedule!',
        items: [
@@ -59,8 +59,8 @@ export default {
    },
    mounted() {
      axios
-       .get('https://restcountries.eu/rest/v2/region/americas')
-       .then(response => {this.countries = response.data})
+       .get('https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=3FMO8VAGazMqugbximtsivAFJyeSqiA4')
+       .then(response => {this.articles = response.data.results})
        .catch(error => {
          console.log(error)
          this.errored = true
@@ -71,4 +71,7 @@ export default {
  </script>
 
  <style>
+  .heading {
+  margin-left: 13%;
+  }
   </style>

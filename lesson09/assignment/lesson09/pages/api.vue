@@ -1,17 +1,17 @@
 <script>
 export default {
 	props: {
-		country: Object
+		article: Object
 	}
 }
 </script>
 
 <template>
 
-    <article class="card">
-        <img :src="country.flag" :alt="country.name" class="card_img">
-        <h2 class="card_title">{{ country.name }}</h2>
-        <p class="card_copy"> {{ country.subregion }} </p>
+    <article class="news-container">
+      <h3> {{ article.subsection }} </h3>
+      <img :src="article.thumbnail_standard">
+      <a :href="article.url"> {{ article.title }} </a>
     </article>
 
 </template>
@@ -20,4 +20,8 @@ export default {
 
 <style lang="scss">
 
+.news-container {
+  margin: 1% 0%;
+  background-color: #f2e6df;
+}
 </style>
